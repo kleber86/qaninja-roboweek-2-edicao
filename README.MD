@@ -2,7 +2,8 @@
     <img src="https://www.qaninja.io/school/wp-content/uploads/2020/06/roboweek-ninja-mascot.svg" width="200px">
 </h1>
 
-<h2>QA Ninja - Automação em Robot Framework! - 2ª Edição</h2>
+<h2 align="center">QA Ninja - Automação em Robot Framework! - 2ª Edição</h2>
+
 <hr>
 
 <strong>Sobre o curso</strong>
