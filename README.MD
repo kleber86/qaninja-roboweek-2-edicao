@@ -13,7 +13,7 @@ Vamos quebrar paradigmas e te mostrar como um QA fora da curva pode ir além de 
 
 Com focom em Web, API e Mobile</p>
 <hr>
-<ol>
+<ul>
     <li>
         Instalações Básicas
         <ul>
@@ -22,7 +22,12 @@ Com focom em Web, API e Mobile</p>
             <li>Console Emulator</li>
         </ul>
     </li>
-    <li>Automação Web</li>
-    <li>Automação para API REST</li>
-    <li>Automação Mobile</li>
-</ol>
+    <li>
+        Modulo 01
+        <ol>
+            <li>Seja bem-vindo(a)</li>
+            <li>Conhecendo o projeto</li>
+            <li>O que é Robot Framework?</li>
+        </ol>
+    </li>
+</ul>
