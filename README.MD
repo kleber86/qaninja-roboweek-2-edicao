@@ -23,11 +23,24 @@ Com focom em Web, API e Mobile</p>
         </ul>
     </li>
     <li>
-        Modulo 01
+        Automação Web I
         <ol>
             <li>Seja bem-vindo(a)</li>
             <li>Conhecendo o projeto</li>
             <li>O que é Robot Framework?</li>
+            <li>Welcome To The Jungle</li>
+            <li>Pense BDD</li>
+            <li>Integrando Robot e Selenium</li>
+            <li>Formulário de cadastro</li>
+        </ol>
+    </li>
+        <li>
+        Automação Web II
+        <ol>
+            <li>Ganchos</li>
+            <li>Base, estrutura em camadas!</li>
+            <li>Especifique mais, codifique menos!</li>
+            <li>Outputs do Robot</li>
         </ol>
     </li>
 </ul>
