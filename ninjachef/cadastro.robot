@@ -2,6 +2,9 @@
 Documentation       Suite de Testes de Cadastro
 Library             SeleniumLibrary
 
+Test Setup          Open Section
+Test Teardown       Close Section
+
 ***Test Cases***
 Cadastro Simples
     Dado que acesso a pagina principal
@@ -10,7 +13,7 @@ Cadastro Simples
 
 ***Keywords***
 Dado que acesso a pagina principal
-    Open Browser    http://ninjachef-qaninja-io.umbler.net/  chrome
+    Go To           http://ninjachef-qaninja-io.umbler.net/
 
 Quando submeto meu email "${email}"
     Input Text          id:email    ${email}
@@ -18,4 +21,10 @@ Quando submeto meu email "${email}"
 
 Entao devo ser autenticado
     Wait Until Page Contains Element        class:dashboard
+
+## Hooks
+Open Section
+    Open Browser        about:blank         chrome
+
+Close Section
     Close Browser
