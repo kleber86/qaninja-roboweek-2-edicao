@@ -11,3 +11,6 @@ Quando submeto meu email "${email}"
 
 Entao devo ser autenticado
     Wait Until Page Contains Element        class:dashboard
+
+Entao devo ver a mensagem "${expect_message}"
+    Wait Until Element Contains         class:alert     ${expect_message}
