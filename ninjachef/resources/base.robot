@@ -16,4 +16,5 @@ Open Section
     Open Browser        about:blank         chrome
 
 Close Section
+    Capture Page Screenshot
     Close Browser
