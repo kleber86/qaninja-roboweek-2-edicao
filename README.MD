@@ -43,4 +43,17 @@ Com focom em Web, API e Mobile</p>
             <li>Outputs do Robot</li>
         </ol>
     </li>
+    </li>
+        <li>
+        Automação Mobile
+        <ol>
+            <li>Instalando o JDK 8</li>
+            <li>Configurando JAVA HOME</li>
+            <li>Android Studio</li>
+            <li>Configurando ANDROID HOME</li>
+            <li>Servidor do Appium</li>
+            <li>Appium Desktop</li>
+            <li>Criando um Android Virtual</li>
+        </ol>
+    </li>
 </ul>
