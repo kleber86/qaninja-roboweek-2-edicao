@@ -11,7 +11,7 @@ Test Setup          Login Session       klebernascimento@outlook.com.br
 Test Teardown       Close Section
 
 ***Variables***
-&{nhoque}=          nome=Nnhoque molho páprica      tipo=Massas     preco=20.00
+&{nhoque}=          img=nhoque.jpg      nome=Nnhoque molho páprica      tipo=Massas     preco=20.00
 
 ***Test Cases***
 Novo prato

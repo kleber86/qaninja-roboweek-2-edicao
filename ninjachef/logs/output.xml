@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 3.2.1 (Python 3.8.3 on win32)" generated="20200710 11:31:25.973" rpa="false">
+<robot generator="Robot 3.2.1 (Python 3.8.3 on win32)" generated="20200711 21:07:43.694" rpa="false">
 <suite id="s1" name="Produtos" source="C:\Estudos\qaninja-roboweek-2-edicao\ninjachef\tests\produtos.robot">
 <test id="s1-t1" name="Novo prato">
 <kw name="Login Session" library="helpers" type="setup">
@@ -13,18 +13,18 @@
 <arg>about:blank</arg>
 <arg>chrome</arg>
 </arguments>
-<msg timestamp="20200710 11:31:26.250" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
-<status status="PASS" starttime="20200710 11:31:26.250" endtime="20200710 11:31:29.602"></status>
+<msg timestamp="20200711 21:07:43.969" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
+<status status="PASS" starttime="20200711 21:07:43.968" endtime="20200711 21:07:47.240"></status>
 </kw>
-<status status="PASS" starttime="20200710 11:31:26.249" endtime="20200710 11:31:29.602"></status>
+<status status="PASS" starttime="20200711 21:07:43.968" endtime="20200711 21:07:47.241"></status>
 </kw>
 <kw name="Go To" library="SeleniumLibrary">
 <doc>Navigates the current browser window to the provided ``url``.</doc>
 <arguments>
 <arg>http://ninjachef-qaninja-io.umbler.net/</arg>
 </arguments>
-<msg timestamp="20200710 11:31:29.603" level="INFO">Opening url 'http://ninjachef-qaninja-io.umbler.net/'</msg>
-<status status="PASS" starttime="20200710 11:31:29.603" endtime="20200710 11:31:32.325"></status>
+<msg timestamp="20200711 21:07:47.241" level="INFO">Opening url 'http://ninjachef-qaninja-io.umbler.net/'</msg>
+<status status="PASS" starttime="20200711 21:07:47.241" endtime="20200711 21:07:48.931"></status>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
@@ -32,25 +32,25 @@
 <arg>id:email</arg>
 <arg>${email}</arg>
 </arguments>
-<msg timestamp="20200710 11:31:32.327" level="INFO">Typing text 'klebernascimento@outlook.com.br' into text field 'id:email'.</msg>
-<status status="PASS" starttime="20200710 11:31:32.326" endtime="20200710 11:31:32.594"></status>
+<msg timestamp="20200711 21:07:48.931" level="INFO">Typing text 'klebernascimento@outlook.com.br' into text field 'id:email'.</msg>
+<status status="PASS" starttime="20200711 21:07:48.931" endtime="20200711 21:07:49.228"></status>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <doc>Click the element identified by ``locator``.</doc>
 <arguments>
 <arg>css:button[type=submit]</arg>
 </arguments>
-<msg timestamp="20200710 11:31:32.594" level="INFO">Clicking element 'css:button[type=submit]'.</msg>
-<status status="PASS" starttime="20200710 11:31:32.594" endtime="20200710 11:31:32.656"></status>
+<msg timestamp="20200711 21:07:49.229" level="INFO">Clicking element 'css:button[type=submit]'.</msg>
+<status status="PASS" starttime="20200711 21:07:49.229" endtime="20200711 21:07:49.313"></status>
 </kw>
 <kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
 <doc>Waits until the element ``locator`` appears on the current page.</doc>
 <arguments>
 <arg>class:dashboard</arg>
 </arguments>
-<status status="PASS" starttime="20200710 11:31:32.656" endtime="20200710 11:31:33.336"></status>
+<status status="PASS" starttime="20200711 21:07:49.314" endtime="20200711 21:07:49.759"></status>
 </kw>
-<status status="PASS" starttime="20200710 11:31:26.249" endtime="20200710 11:31:33.337"></status>
+<status status="PASS" starttime="20200711 21:07:43.968" endtime="20200711 21:07:49.759"></status>
 </kw>
 <kw name="Dado que &quot;${nhoque}&quot; é um dos meus pratos" library="kws">
 <kw name="Set Test Variable" library="BuiltIn">
@@ -58,10 +58,10 @@
 <arguments>
 <arg>${produto}</arg>
 </arguments>
-<msg timestamp="20200710 11:31:33.340" level="INFO">${produto} = {'nome': 'Nnhoque molho páprica', 'tipo': 'Massas', 'preco': '20.00'}</msg>
-<status status="PASS" starttime="20200710 11:31:33.339" endtime="20200710 11:31:33.340"></status>
+<msg timestamp="20200711 21:07:49.760" level="INFO">${produto} = {'img': 'nhoque.jpg', 'nome': 'Nnhoque molho páprica', 'tipo': 'Massas', 'preco': '20.00'}</msg>
+<status status="PASS" starttime="20200711 21:07:49.760" endtime="20200711 21:07:49.760"></status>
 </kw>
-<status status="PASS" starttime="20200710 11:31:33.338" endtime="20200710 11:31:33.340"></status>
+<status status="PASS" starttime="20200711 21:07:49.759" endtime="20200711 21:07:49.760"></status>
 </kw>
 <kw name="Quando faço o cadastro desse item" library="kws">
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
@@ -70,15 +70,24 @@
 <arg>class:btn-add</arg>
 <arg>5</arg>
 </arguments>
-<status status="PASS" starttime="20200710 11:31:33.342" endtime="20200710 11:31:33.619"></status>
+<status status="PASS" starttime="20200711 21:07:49.761" endtime="20200711 21:07:50.233"></status>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <doc>Click the element identified by ``locator``.</doc>
 <arguments>
 <arg>class:btn-add</arg>
 </arguments>
-<msg timestamp="20200710 11:31:33.619" level="INFO">Clicking element 'class:btn-add'.</msg>
-<status status="PASS" starttime="20200710 11:31:33.619" endtime="20200710 11:31:33.680"></status>
+<msg timestamp="20200711 21:07:50.233" level="INFO">Clicking element 'class:btn-add'.</msg>
+<status status="PASS" starttime="20200711 21:07:50.233" endtime="20200711 21:07:50.300"></status>
+</kw>
+<kw name="Choose File" library="SeleniumLibrary">
+<doc>Inputs the ``file_path`` into the file input field ``locator``.</doc>
+<arguments>
+<arg>css:input[id=thumbnail]</arg>
+<arg>${EXECDIR}/resources/images/${produto['img']}</arg>
+</arguments>
+<msg timestamp="20200711 21:07:50.301" level="INFO">Sending C:\Estudos\qaninja-roboweek-2-edicao\ninjachef\resources\images\nhoque.jpg to browser.</msg>
+<status status="PASS" starttime="20200711 21:07:50.301" endtime="20200711 21:07:50.361"></status>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
@@ -86,8 +95,8 @@
 <arg>id:name</arg>
 <arg>${produto['nome']}</arg>
 </arguments>
-<msg timestamp="20200710 11:31:33.681" level="INFO">Typing text 'Nnhoque molho páprica' into text field 'id:name'.</msg>
-<status status="PASS" starttime="20200710 11:31:33.680" endtime="20200710 11:31:33.863"></status>
+<msg timestamp="20200711 21:07:50.361" level="INFO">Typing text 'Nnhoque molho páprica' into text field 'id:name'.</msg>
+<status status="PASS" starttime="20200711 21:07:50.361" endtime="20200711 21:07:50.538"></status>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
@@ -95,8 +104,8 @@
 <arg>id:plate</arg>
 <arg>${produto['tipo']}</arg>
 </arguments>
-<msg timestamp="20200710 11:31:33.863" level="INFO">Typing text 'Massas' into text field 'id:plate'.</msg>
-<status status="PASS" starttime="20200710 11:31:33.863" endtime="20200710 11:31:33.976"></status>
+<msg timestamp="20200711 21:07:50.539" level="INFO">Typing text 'Massas' into text field 'id:plate'.</msg>
+<status status="PASS" starttime="20200711 21:07:50.539" endtime="20200711 21:07:50.658"></status>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
@@ -104,18 +113,18 @@
 <arg>id:price</arg>
 <arg>${produto['preco']}</arg>
 </arguments>
-<msg timestamp="20200710 11:31:33.977" level="INFO">Typing text '20.00' into text field 'id:price'.</msg>
-<status status="PASS" starttime="20200710 11:31:33.976" endtime="20200710 11:31:34.088"></status>
+<msg timestamp="20200711 21:07:50.658" level="INFO">Typing text '20.00' into text field 'id:price'.</msg>
+<status status="PASS" starttime="20200711 21:07:50.658" endtime="20200711 21:07:50.777"></status>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <doc>Click the element identified by ``locator``.</doc>
 <arguments>
 <arg>class:btn-cadastrar</arg>
 </arguments>
-<msg timestamp="20200710 11:31:34.088" level="INFO">Clicking element 'class:btn-cadastrar'.</msg>
-<status status="PASS" starttime="20200710 11:31:34.088" endtime="20200710 11:31:34.156"></status>
+<msg timestamp="20200711 21:07:50.777" level="INFO">Clicking element 'class:btn-cadastrar'.</msg>
+<status status="PASS" starttime="20200711 21:07:50.777" endtime="20200711 21:07:50.845"></status>
 </kw>
-<status status="PASS" starttime="20200710 11:31:33.341" endtime="20200710 11:31:34.156"></status>
+<status status="PASS" starttime="20200711 21:07:49.761" endtime="20200711 21:07:50.846"></status>
 </kw>
 <kw name="Então devo ver este prato no meu dashboard" library="kws">
 <kw name="Wait Until Element Contains" library="SeleniumLibrary">
@@ -124,40 +133,34 @@
 <arg>class:product-list</arg>
 <arg>${produto['nome']}</arg>
 </arguments>
-<kw name="Capture Page Screenshot" library="SeleniumLibrary">
-<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<msg timestamp="20200710 11:31:39.893" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-3.png"&gt;&lt;img src="selenium-screenshot-3.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20200710 11:31:39.347" endtime="20200710 11:31:39.894"></status>
+<status status="PASS" starttime="20200711 21:07:50.847" endtime="20200711 21:07:51.978"></status>
 </kw>
-<msg timestamp="20200710 11:31:39.921" level="FAIL">Element with locator 'class:product-list' not found.</msg>
-<status status="FAIL" starttime="20200710 11:31:34.157" endtime="20200710 11:31:39.921"></status>
-</kw>
-<status status="FAIL" starttime="20200710 11:31:34.157" endtime="20200710 11:31:39.921"></status>
+<status status="PASS" starttime="20200711 21:07:50.846" endtime="20200711 21:07:51.978"></status>
 </kw>
 <kw name="Close Section" library="base" type="teardown">
 <kw name="Close Browser" library="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20200710 11:31:39.923" endtime="20200710 11:31:42.344"></status>
+<status status="PASS" starttime="20200711 21:07:51.979" endtime="20200711 21:07:54.163"></status>
 </kw>
-<status status="PASS" starttime="20200710 11:31:39.922" endtime="20200710 11:31:42.345"></status>
+<status status="PASS" starttime="20200711 21:07:51.979" endtime="20200711 21:07:54.164"></status>
 </kw>
-<status status="FAIL" starttime="20200710 11:31:26.248" endtime="20200710 11:31:42.346" critical="yes">Element with locator 'class:product-list' not found.</status>
+<status status="PASS" starttime="20200711 21:07:43.967" endtime="20200711 21:07:54.164" critical="yes"></status>
 </test>
 <doc>Cadastro de produtos/pratos
 Sendo um cozinheiro amador
 Quero cadastrar meus melhores pratos
 Para que eu possa cozinha-los para outras pessoas</doc>
-<status status="FAIL" starttime="20200710 11:31:25.975" endtime="20200710 11:31:42.350"></status>
+<status status="PASS" starttime="20200711 21:07:43.697" endtime="20200711 21:07:54.168"></status>
 </suite>
 <statistics>
 <total>
-<stat pass="0" fail="1">Critical Tests</stat>
-<stat pass="0" fail="1">All Tests</stat>
+<stat pass="1" fail="0">Critical Tests</stat>
+<stat pass="1" fail="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="0" fail="1" id="s1" name="Produtos">Produtos</stat>
+<stat pass="1" fail="0" id="s1" name="Produtos">Produtos</stat>
 </suite>
 </statistics>
 <errors>

@@ -22,6 +22,9 @@ Dado que "${produto}" é um dos meus pratos
 Quando faço o cadastro desse item
     Wait Until Element Is Visible       class:btn-add       5 
     Click Element                       class:btn-add
+
+    Choose File                         css:input[id=thumbnail]     ${EXECDIR}/resources/images/${produto['img']}
+
     Input Text                          id:name              ${produto['nome']}
     Input Text                          id:plate             ${produto['tipo']}
     Input Text                          id:price             ${produto['preco']}
