@@ -23,7 +23,7 @@ Com focom em Web, API e Mobile</p>
         </ul>
     </li>
     <li>
-        Automação Web I
+         Introdução a Automação
         <ol>
             <li>Seja bem-vindo(a)</li>
             <li>Conhecendo o projeto</li>
@@ -31,21 +31,27 @@ Com focom em Web, API e Mobile</p>
             <li>Welcome To The Jungle</li>
             <li>Pense BDD</li>
             <li>Integrando Robot e Selenium</li>
-            <li>Formulário de cadastro</li>
+            <li>Formulário simples</li>
         </ol>
     </li>
         <li>
-        Automação Web II
+        Boas Práticas e Cobertura de Testes
         <ol>
             <li>Ganchos</li>
             <li>Base, estrutura em camadas!</li>
             <li>Especifique mais, codifique menos!</li>
             <li>Outputs do Robot</li>
+            <li>Dica: Back to the Folder</li>
+            <li>Formulário completo</li>
+            <li>Upload</li>
+            <li>Mapeando elementos com variáveis do Robot</li>
+            <li>Capturando Screenshots</li>
+            <li>Fim do módulo, novidades e feedbacks</li>
         </ol>
     </li>
     </li>
         <li>
-        Automação Mobile
+        Testando o App para Android
         <ol>
             <li>Instalando o JDK 8</li>
             <li>Configurando JAVA HOME</li>
@@ -54,6 +60,18 @@ Com focom em Web, API e Mobile</p>
             <li>Servidor do Appium</li>
             <li>Appium Desktop</li>
             <li>Criando um Android Virtual</li>
+            <li>Inspeção do App NinjaChef para Android</li>
+            <li>Iniciando Projeto Mobile + Insights de BDD</li>
+            <li>Logando no App</li>
+            <li>Screenshots e fechamento do módulo!</li>
+        </ol>
+    </li>
+    li>
+        Estratégias de Testes
+        <ol>
+            <li>Funcionalidades CrossApp. E agora?</li>
+            <li>Consumindo a API do Cozinheiro no Postman</li>
+            <li>Consumindo a API de Cliente no Postman</li>
         </ol>
     </li>
 </ul>
