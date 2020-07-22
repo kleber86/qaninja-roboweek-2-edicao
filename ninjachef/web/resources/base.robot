@@ -12,9 +12,9 @@ ${base_url}          http://ninjachef-qaninja-io.umbler.net/
 
 ***Keywords***
 ## Hooks
-Open Section
+Open Session
     Open Browser        about:blank         chrome
 
-Close Section
+Close Session
     Capture Page Screenshot
     Close Browser

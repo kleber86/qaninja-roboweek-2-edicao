@@ -6,6 +6,8 @@ Documentation           Receber pedidos
 
 Resource            ../resources/base.robot
 
+Library             RequestsLibrary
+
 Test Setup          Open Session
 Test Teardown       Close Session
 
@@ -21,6 +23,15 @@ Receber novo pedido
 ***Keywords***
 Dado que "${email_cozinheiro}" é minha conta de cozinheiro
     Set Test Variable       ${email_cozinheiro}
+
+    &{headers}=         Create Dictionary        Content-Type=application/json
+    &{payload}=         Create Dictionary       email=${email_cozinheiro}
+
+    Create Session      api       http://ninjachef-api-qaninja-io.umbler.net
+    ${resp}=            Post Request    api         /sessions        data=${payload}    headers=${headers}
+    Status Should Be  200             ${resp}
+
+    Log To Console      ${resp.json()['_id']}
 
 E "${email_cliente}" é o email do meu cliente
     Set Test Variable       ${email_cliente}
