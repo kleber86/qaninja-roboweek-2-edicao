@@ -30,7 +30,7 @@ Dado que "${email_cozinheiro}" é minha conta de cozinheiro
 
     Create Session      api       http://ninjachef-api-qaninja-io.umbler.net
     ${resp}=            Post Request    api         /sessions        data=${payload}    headers=${headers}
-    Status Should Be  200             ${resp}
+    Status Should Be    200             ${resp}
 
     ${token_cozinheiro}     Convert To String      ${resp.json()['_id']}
     Set Test Variable       ${token_cozinheiro}
@@ -41,12 +41,13 @@ E "${email_cliente}" é o email do meu cliente
 E que "${produto}" está cadastrado no meu dashboard
     Set Test Variable       ${produto}
 
-    &{payload}=     Create Dictionary       name=${produto}     plate=Tipo      price=20.00
-    ${image_file}=  Get Binary File        ${EXECDIR}/resources/images/produto.jpg
-    &{files}=       Create Dictionary       thumbnail=${image_file}
+    &{payload}=        Create Dictionary       name=${produto}     plate=Tipo      price=20.00
 
-    &{headers}=         Create Dictionary       user_id=${token_cozinheiro}
+    ${image_file}=     Get Binary File         ${EXECDIR}/resources/images/produto.jpg
+    &{files}=          Create Dictionary       thumbnail=${image_file}
 
-    Create Session      api       http://ninjachef-api-qaninja-io.umbler.net
-    ${resp}=            Post Request    api         /products       files=${files}      data=${payload}    headers=${headers}
-    Status Should Be  200             ${resp}
+    &{headers}=        Create Dictionary       user_id=${token_cozinheiro}
+
+    Create Session    api            http://ninjachef-api-qaninja-io.umbler.net
+    ${resp}=          Post Request   api       /products    files=${files}      data=${payload}     headers=${headers}
+    Status Should Be  200            ${resp}
