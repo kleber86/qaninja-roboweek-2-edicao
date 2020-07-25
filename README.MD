@@ -66,12 +66,24 @@ Com focom em Web, API e Mobile</p>
             <li>Screenshots e fechamento do módulo!</li>
         </ol>
     </li>
-    li>
+    <li>
         Estratégias de Testes
         <ol>
             <li>Funcionalidades CrossApp. E agora?</li>
             <li>Consumindo a API do Cozinheiro no Postman</li>
             <li>Consumindo a API de Cliente no Postman</li>
+            <li>Continue pensando BDD</li>
+            <li>Login do Cozinheiro na API</li>
+            <li>Cadastrando produto via API</li>
+            <li>Solicitando o prato para o Cozinheiro</li>
+            <li>Validando a chegada do Pedido no Dashboard</li>
+            <li>Encapsulando em Keywords</li>
+        </ol>
+    </li>
+        <li>
+            Encerramento
+        <ol>
+            <li>Encerramento do RoboWeek 2a edição</li>
         </ol>
     </li>
 </ul>
